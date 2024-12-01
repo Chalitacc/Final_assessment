@@ -1,0 +1,22 @@
+:root{
+    /* spacing */
+
+    --spacing-x-smal: 0.5rem; 
+    --spacing-small: 1rem; 
+    --spacing--medium: 2rem; 
+    --spacing-large: 3rem; 
+    --spacing-x-large: 4rem; 
+
+    /* font size */
+
+    --font-small: 0.5rem; 
+    --font-medium: 1rem; 
+    --font-large: 3; 
+
+
+    /* colors */
+    --primary-color: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
+    --seconday--color: radial-gradient(circle at 10% 20%, rgb(236, 158, 248) 0%, rgb(131, 83, 241) 90.1%);
+    --text-color: black;
+
+}
