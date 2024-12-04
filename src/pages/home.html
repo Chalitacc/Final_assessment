@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cozy Corner Shop</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/shop.css">
 </head>
 <body>
     <header class="header__container">
@@ -16,49 +19,78 @@
 
         <nav class="navbar__container">
             <p>Genres</p>
-            <a href="#fantasy" class="genres__link">Fantasy</a>
             <a href="#literature" class="genres__link">Novels</a>
+            <a href="#fantasy" class="genres__link">Fantasy</a>
             <a href="#thriller" class="genres__link">Thriller</a>
             <a href="#crime" class="genres__link">Crime</a>
-            <a href="#documentaries" class="genres__link">Classics</a>
+            <a href="#documentaries" class="genres__link">Sales</a>
 
-            <label for="search" class="search">Search:</label>
-            <input type="search" id="search" class="search">
+            <div class="search__container">
+                <label for="search" class="search__title">Search:</label>
+                <input type="search" id="search" class="search__input">
+            </div>
+    
         </nav>
     </header>
 
     <main>
-        <section class="fantasy_section">
-            <div id="fantasy" class="fantasy__container">
-                <h2>Fantasy</h2>
-            </div> 
+
+        <section>
+             <div class="novels__section">
+                <h2 class="sections__title">Novels</h2>
+                <div id="novels" class="book__container">
+                    <!-- <img src="" alt="book image" class="image__book-container"> -->
+                    <p class="book__author"></p>
+                    <p class="book__title"></p>
+                    <p class="book__price"></p>
+                    <p class="book__cover-type"></p>
+                </div>
+            </div>
         </section>
 
-        <section class="novels__section">
-            <div id="novels" class="novels__container">
-                <h2>Novels</h2>
+        
+        <section class="fantasy_section">
+            <h2 class="sections__header">Fantasy</h2>
+            <div id="fantasy" class="book__container">
+                <p class="book__author"></p>
+                <p class="book__title"></p>
+                <p class="book__price"></p>
+                <p class="book__cover-type"></p>
             </div> 
         </section>
 
         <section class="thriller_section">
-            <div id="thriller" class="thriller__container">
-                <h2>Thriller</h2>
+            <h2 class="sections__container">Thriller</h2>
+            <div id="thriller" class="book__container">
+                <p class="book__author"></p>
+                <p class="book__title"></p>
+                <p class="book__price"></p>
+                <p class="book__cover-type"></p>
             </div> 
         </section>
 
         <section class="crime__section">
-            <div id="crime" class="crime__container">
-                <h2>Crime</h2>
+            <h2 class="sections__container">Crime</h2>
+            <div id="crime" class="book__container">
+                <p class="book__author"></p>
+                <p class="book__title"></p>
+                <p class="book__price"></p>
+                <p class="book__cover-type"></p> 
             </div> 
         </section>
     
 
         <section class="classics__section">
-            <div id="classics" class="classics__container">
-                <h2>Classics</h2>
+            <h2 class="sections__container">Sales</h2>
+            <div id="sales" class="book__container">
+                <p class="book__author"></p>
+                <p class="book__title"></p>
+                <p class="book__price"></p>
+                <p class="book__cover-type"></p>
             </div> 
         </section>
 
     </main>
+    <script src="../javascript/app.js"></script>
 </body>
 </html>

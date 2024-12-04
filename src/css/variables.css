@@ -16,7 +16,8 @@
 
     /* colors */
     --primary-color: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
-    --seconday--color: radial-gradient(circle at 10% 20%, rgb(236, 158, 248) 0%, rgb(131, 83, 241) 90.1%);
+    --seconday-color: radial-gradient(circle at 10% 20%, rgb(236, 158, 248) 0%, rgb(131, 83, 241) 90.1%);
     --text-color: black;
+    --hover-text-color:white;
 
 }
