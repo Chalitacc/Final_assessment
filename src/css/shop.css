@@ -17,6 +17,10 @@ header{
     background: var(--primary-color);
 }
 
+.header__title {
+    font-size:3rem;
+}
+
 .header__first-container{
     display: flex;
     justify-content:space-between;
@@ -24,6 +28,11 @@ header{
     padding: var(--spacing-x-smal) var(--spacing-small);
     font-family: EBGaramond;
 
+}
+
+main{
+    height: 100%;
+    padding-bottom: 60px;
 }
 
 .basket__button{
@@ -97,6 +106,7 @@ header{
   
 }
 
+
 .book{
     width: inherit;
     display: flex;
@@ -105,13 +115,15 @@ header{
     flex-direction: column;
     transition: 0.5s;
     gap: var(--spacing-x-smal);
+    background:linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+    border-radius: 3%;
 
 }
 
 .book:hover{
     transform: scale(1.1);
     background: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);;
-    
+    cursor: pointer;
 }
 
 .image__book-container{
@@ -127,10 +139,15 @@ header{
   
 }
 
+.image__book-container{
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+}
 .book__title{
     align-self: flex-start;
     padding-left: var(--spacing-small);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -140,7 +157,14 @@ header{
     font-size: 2rem;
 }
 
+.book__cover-type{
+    align-self: center;
+    font-size: var(--font-medium);
+    font-weight: bold;
+}
+
 .order__button{
+    align-self: center;
     cursor: pointer;
     margin-bottom: var(--spacing-small);
     width: 80px;
@@ -148,6 +172,36 @@ header{
     background-color: rgb(151, 56, 151);
     color: var(--hover-text-color);
     border: none;
+}
+
+.sales__headline{
+    display: none;
+}
+.scroll__up-button{
+    width: 20px;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    border: none;
+    padding: var(--spacing-x-smal);
+    cursor: pointer;
+    margin-left: var(--spacing-x-smal);
+    z-index: 1000;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    background: var(--seconday-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.scroll__up-button:hover{
+    opacity: 1;
+}
+
+.scroll__up-button-hide{
+    display: none;
 }
 
 

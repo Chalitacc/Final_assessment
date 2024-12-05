@@ -5,12 +5,12 @@ const products = [
     price: 219, 
     title: "Intermezzo", 
     author: "Salley Rooney",
-    bookcover: "Pocket",  
+    bookCover: "Pocket",  
     sale: false, 
     category: "novels",  
 },
 {
-    src: "",
+    src: "../assets/images/a-little-life.webp",
     price: 199, 
     sale: false, 
     title: "A Little Life ", 
@@ -19,7 +19,7 @@ const products = [
     category: "novels",  
 },
 {
-    src: "",
+    src: "../assets/images/tomorrow.webp",
     price: 169, 
     sale: false, 
     title: "Tomorrow, and Tomorrow, and Tomorrow", 
@@ -28,7 +28,7 @@ const products = [
     category: "novels",  
 },
 {
-    src: "",
+    src: "../assets/images/watching-women.webp",
     price: 159, 
     sale: true, 
     title: "Watching Women & Girls", 
@@ -37,7 +37,7 @@ const products = [
     category: "novels",  
 },
 {
-    src: "",
+    src: "../assets/images/magnolia-parks.webp",
     price: 199, 
     sale: false, 
     title: "Magnolia Parks", 
@@ -46,7 +46,7 @@ const products = [
     category: "novels",  
 },
 {
-    src: "",
+    src: "../assets/images/things-we-do-not-tell.webp",
     price: 169, 
     sale: false, 
     title: "Things We Do Not Tell The People We Love", 
@@ -55,7 +55,7 @@ const products = [
     category: "novels",  
 },
 {
-    src: "",
+    src: "../assets/images/breast-and-eggs.webp",
     price: 169, 
     sale: false, 
     title: "Breasts and Eggs", 
@@ -64,9 +64,19 @@ const products = [
     category: "novels",  
 },
 
+{
+    src: "../assets/images/missing-sister.webp",
+    price: 179, 
+    sale: false, 
+    title: "The Missing Sister", 
+    bookCover: "Pocket", 
+    author: "Lucinda Riley", 
+    category: "novels",  
+},
+
    //FANTASY//
 {
-    src: "",
+    src: "../assets/images/priority-of-orange-tree.webp",
     price: 179, 
     sale: false, 
     title: "The Priory of the Orange Tree", 
@@ -75,7 +85,7 @@ const products = [
     category: "fantasy",  
 },
 {
-    src: "",
+    src: "../assets/images/the-will-of-many.webp",
     price: 299, 
     sale: false, 
     title: "The Will of The Many", 
@@ -84,7 +94,7 @@ const products = [
     category: "fantasy",  
 },
 {
-    src: "",
+    src: "../assets/images/book-of-azreal.webp",
     price: 129, 
     sale: true, 
     title: "The Book of Azreal" , 
@@ -93,7 +103,7 @@ const products = [
     category:"fantasy",  
 },
 {
-    src: "",
+    src: "../assets/images/moon-hatched.webp",
     price: 219, 
     sale: true, 
     title: "When The Moon Hatched", 
@@ -102,7 +112,7 @@ const products = [
     category: "fantasy",  
 },
 {
-    src: "",
+    src: "../assets/images/before-coffe-gets-cold.webp",
     price: 129, 
     sale: true, 
     title: "Before the Coffee Gets Cold", 
@@ -111,16 +121,16 @@ const products = [
     category:"fantasy",  
 },
 {
-    src: "",
-    price: 169, 
+    src: "../assets/images/sky-and-breath.jpg",
+    price: 329, 
     sale: false, 
     title: "House of Sky and Breath", 
-    bookCover: "Pocket", 
+    bookCover: "Hard Cover", 
     author: "Sarah J. Maas", 
     category: "fantasy",  
 },
 {
-    src: "",
+    src: "../assets/images/fourth-wing.webp",
     price: 299, 
     sale: false, 
     title: "Fourth Wing", 
@@ -129,16 +139,16 @@ const products = [
     category: "fantasy",  
 },
 {
-    src: "",
-    price: 149, 
+    src: "../assets/images/gild.webp",
+    price: 349, 
     sale: true, 
-    title: "Gild", 
-    bookCover: "Pocket", 
+    title: "Gild. The Plated Prisoner 1", 
+    bookCover: "Hard Cover", 
     author: "Raven Kennedy", 
     category: "fantasy",  
 },
 {
-    src: "",
+    src: "../assets/images/heir-of-fire.webp",
     price: 169, 
     sale: false, 
     title: "Heir of Fire",  
@@ -147,18 +157,36 @@ const products = [
     category: "fantasy",  
 },
 {
-    src: "",
-    price: 169, 
+    src: "../assets/images/babel.jpg",
+    price: 279, 
     sale: false, 
     title: "Babel", 
-    bookCover: "Pocket", 
+    bookCover: "Hard Cover", 
     author: "R.F. Kuang", 
+    category: "fantasy",  
+},
+{
+    src: "../assets/images/broken-heart.jpg",
+    price: 169, 
+    sale: true, 
+    title: "One Upon a Broken Heart", 
+    bookCover: "Pocket", 
+    author: "Stephanie Garber", 
+    category: "fantasy",  
+},
+{
+    src: "../assets/images/six-of-crows.webp",
+    price: 299, 
+    sale: false, 
+    title: "Six of Crows", 
+    bookCover: "Hard Cover", 
+    author: "Leight Bardugo", 
     category: "fantasy",  
 },
 
    //THRILLER
 {
-    src: "",
+    src: "../assets/images/the-maidens.webp",
     price: 169, 
     sale: false, 
     title: "The Maidens", 
@@ -167,7 +195,7 @@ const products = [
     category: "thriller",  
 },
 {
-    src: "",
+    src: "../assets/images/the-housemaid.webp",
     price: 159, 
     sale: true, 
     title: "The Housemaid", 
@@ -176,16 +204,16 @@ const products = [
     category: "thriller",  
 },
 {
-    src: "",
-    price: 129, 
+    src: "../assets/images/pet-sematary.webp",
+    price: 179, 
     sale: true, 
-    title: "Sarek", 
+    title: "Pet Sematary", 
     bookCover: "Pocket", 
-    author: "Ulf Kvensler", 
+    author: "Stephen King", 
     category: "thriller",  
 },
 {
-    src: "",
+    src: "../assets/images/billy-summers.webp",
     price: 215, 
     sale: true, 
     title: "Billy Summers", 
@@ -194,7 +222,7 @@ const products = [
     category: "thriller",  
 },
 {
-    src: "",
+    src: "../assets/images/silent-patient.webp",
     price: 169, 
     sale: false, 
     title: "The Silent Patient", 
@@ -202,10 +230,21 @@ const products = [
     author: "Alex Michaelides", 
     category: "thriller",  
 },
+{
+    src: "../assets/images/yellowface.webp",
+    price: 169, 
+    sale: false, 
+    title: "Yellowface", 
+    bookCover: "Pocket", 
+    author: "Rebecca F. Kuang", 
+    category: "thriller",  
+},
+
+
 
  // CRIME
 {
-    src: "",
+    src: "../assets/images/cockroaches.webp",
     price: 149, 
     sale: false, 
     title: "Cockroaches", 
@@ -214,7 +253,7 @@ const products = [
     category: "crime",  
 },
 {
-    src: "",
+    src: "../assets/images/thirst.webp",
     price: 169, 
     sale: false, 
     title: "The Thirst", 
@@ -222,7 +261,7 @@ const products = [
     author: "Jo Nesbø", 
     category: "crime",  
 },{
-    src: "",
+    src: "../assets/images/man-who-died-twice.webp",
     price: 169, 
     sale: false, 
     title: "The Man Who Died Twice", 
@@ -231,7 +270,7 @@ const products = [
     category: "crime",  
 },
 {
-    src: "",
+    src: "../assets/images/what-lies-between-us.webp",
     price: 159, 
     sale: true, 
     title: "What Lies Between Us", 
@@ -240,21 +279,39 @@ const products = [
     category: "crime",  
 },
 {
-    src: "",
-    price: 169, 
+    src: "../assets/images/good-girl-guide-to-murder.webp",
+    price: 249, 
     sale: false, 
     title: "A Good Girl´s Guide to Murder", 
-    bookCover: "Pocket", 
+    bookCover: "Hard Cover", 
     author: "Holly Jackson", 
     category: "crime",  
 },
 {
-    src: "",
+    src: "../assets/images/christmas-guest.webp",
     price: 149, 
     sale: true, 
     title: "The Christmas Guest", 
-    bookCover: "Pocket", 
+    bookCover: "Hard Cover", 
     author: "Peter Swanson", 
+    category: "crime",  
+},
+{
+    src: "../assets/images/witch-hunter.webp",
+    price: 169, 
+    sale: true, 
+    title: "The Witch Hunter", 
+    bookCover: "Pocket", 
+    author: "Max Seeck", 
+    category: "crime",  
+},
+{
+    src: "../assets/images/hidden-pictures.webp",
+    price: 169, 
+    sale: true, 
+    title: "Hidden Pictures", 
+    bookCover: "Pocket", 
+    author: "Jason Rekulak", 
     category: "crime",  
 },
 ]; 
@@ -263,6 +320,9 @@ const novelsContainer = document.getElementById(`novels`);
 const fantasyContainer = document.getElementById(`fantasy`);
 const thrillerContainer = document.getElementById(`thriller`);
 const crimeCotnainer = document.getElementById(`crime`); 
+const salesCategory = document.getElementById(`sales`)
+
+const searchInput = document.querySelector(".search__input");
 
 
 function bookContent (book, container){
@@ -308,3 +368,135 @@ products.filter(book => book.category === `novels`).forEach (book => bookContent
 products.filter(book => book.category === `fantasy`).forEach (book => bookContent(book, fantasyContainer));
 products.filter(book => book.category === `thriller`).forEach (book => bookContent(book, thrillerContainer)); 
 products.filter(book => book.category === `crime`).forEach (book => bookContent(book, crimeCotnainer));
+
+
+
+// FILTER FUNCTION FOR SCROLL TO VIEW AND SALES CATEGORY 
+
+function hideContainers() {
+    document.querySelectorAll(".book__container").forEach(container =>{
+        container.style.display = 'none';
+    });
+
+    document.querySelector(".novels__headline").style.display = 'none'
+    document.querySelector(".fantasy__headline").style.display = 'none'
+    document.querySelector(".thriller__headline").style.display = 'none'
+    document.querySelector(".crime__headline").style.display = 'none'
+ 
+
+}; 
+
+function restoredCategories(){
+
+    novelsContainer.style.display = 'grid';
+    fantasyContainer.style.display = 'grid'; 
+    thrillerContainer.style.display = 'grid';
+    crimeCotnainer.style.display = 'grid'; 
+    salesCategory.style.display ='none';
+
+    document.querySelector(".novels__headline").style.display = 'block'
+    document.querySelector(".fantasy__headline").style.display = 'block'
+    document.querySelector(".thriller__headline").style.display = 'block'
+    document.querySelector(".crime__headline").style.display = 'block'  
+    
+
+};
+
+function smoothScrolling(sectionID){
+    const section = document.getElementById(sectionID);
+    if (section){
+        section.scrollIntoView({behavior: 'smooth'}); 
+    }
+}
+
+document.querySelectorAll(".genres__link").forEach(link =>{
+    link.addEventListener('click', event => {
+        event.preventDefault();
+
+        const targetID = link.getAttribute('href').substring(1); 
+
+        if (targetID === "sales"){
+            hideContainers();
+
+            salesCategory.innerHTML = ''; 
+
+            const salesBooks = products.filter(book => book.sale); 
+        
+            salesBooks.forEach(book => bookContent(book,salesCategory));
+
+            salesCategory.style.display = 'grid';
+            document.querySelector(".sales__headline").style.display = 'block'
+
+        } else {
+            restoredCategories();
+        }
+        smoothScrolling(targetID)
+
+
+    })
+})
+
+// SCROLL TO TOP BUTTON 
+
+const scrollToTopButton = document.querySelector(".scroll__up-button");
+
+window.onscroll = function (){
+    if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100){
+        scrollToTopButton.classList.remove('scroll__up-button-hide'); 
+    } else {
+        scrollToTopButton.classList.add('scroll__up-button-hide')
+    }
+}; 
+
+scrollToTopButton.addEventListener('click', function(){
+    window.scrollTo({top: 0, behavior: 'smooth'});
+})
+
+// SEARCH FUNCTION 
+
+searchInput.addEventListener('input', (e)=>{
+    const input = e.target.value.toLowerCase().trim(); 
+    let filteredProducts = [...products];
+
+    filteredProducts = filteredProducts.filter((product)  =>{
+        return (
+            product.title.toLowerCase().startsWith(input)  || 
+            product.author.toLowerCase().startsWith(input)
+        );
+    }); 
+
+    novelsContainer.innerHTML = '';
+    fantasyContainer.innerHTML = '';
+    thrillerContainer.innerHTML = ''; 
+    crimeCotnainer.innerHTML = ''; 
+
+    if (input === '') {
+        products.filter(book => book.category === `novels`).forEach (book => bookContent(book, novelsContainer)); 
+        products.filter(book => book.category === `fantasy`).forEach (book => bookContent(book, fantasyContainer));
+        products.filter(book => book.category === `thriller`).forEach (book => bookContent(book, thrillerContainer)); 
+        products.filter(book => book.category === `crime`).forEach (book => bookContent(book, crimeCotnainer));
+
+        return;
+
+    }
+
+    filteredProducts.forEach((product =>{
+        if (product.category === "novels") {
+            bookContent(product, novelsContainer);
+        } else if (product.category === "fantasy") {
+            bookContent(product, fantasyContainer);
+        } else if (product.category === thriller) {
+            bookContent(product, thrillerContainer); 
+        } else if (product.category === 'crime') {
+            bookContent(product, crimeCotnainer); 
+        }
+    }))
+
+
+})
+
+
+
+
+
+

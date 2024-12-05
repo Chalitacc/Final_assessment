@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cozy Corner Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/variables.css">
     <link rel="stylesheet" href="../css/shop.css">
@@ -18,12 +19,13 @@
         
 
         <nav class="navbar__container">
-            <p>Genres</p>
-            <a href="#literature" class="genres__link">Novels</a>
-            <a href="#fantasy" class="genres__link">Fantasy</a>
-            <a href="#thriller" class="genres__link">Thriller</a>
-            <a href="#crime" class="genres__link">Crime</a>
-            <a href="#documentaries" class="genres__link">Sales</a>
+            <!-- <p>Genres</p> -->
+            <a href="#genres" class="genres__link generes__link">Genres</a>
+            <a href="#literature" class="genres__link novels__link">Novels</a>
+            <a href="#fantasy" class="genres__link fantasy__link">Fantasy</a>
+            <a href="#thriller" class="genres__link thriller__link">Thriller</a>
+            <a href="#crime" class="genres__link crime__link">Crime</a>
+            <a href="#sales" class="genres__link sales__link">Sales</a>
 
             <div class="search__container">
                 <label for="search" class="search__title">Search:</label>
@@ -37,7 +39,7 @@
 
         <section>
              <div class="novels__section">
-                <h2 class="sections__title">Novels</h2>
+                <h2 class="sections__title novels__headline">Novels</h2>
                 <div id="novels" class="book__container">
                     <!-- <img src="" alt="book image" class="image__book-container"> -->
                     <p class="book__author"></p>
@@ -50,7 +52,7 @@
 
         
         <section class="fantasy_section">
-            <h2 class="sections__header">Fantasy</h2>
+            <h2 class="sections__title fantasy__headline">Fantasy</h2>
             <div id="fantasy" class="book__container">
                 <p class="book__author"></p>
                 <p class="book__title"></p>
@@ -60,7 +62,7 @@
         </section>
 
         <section class="thriller_section">
-            <h2 class="sections__container">Thriller</h2>
+            <h2 class="sections__title thriller__headline">Thriller</h2>
             <div id="thriller" class="book__container">
                 <p class="book__author"></p>
                 <p class="book__title"></p>
@@ -70,7 +72,7 @@
         </section>
 
         <section class="crime__section">
-            <h2 class="sections__container">Crime</h2>
+            <h2 class="sections__title crime__headline">Crime</h2>
             <div id="crime" class="book__container">
                 <p class="book__author"></p>
                 <p class="book__title"></p>
@@ -81,14 +83,18 @@
     
 
         <section class="classics__section">
-            <h2 class="sections__container">Sales</h2>
-            <div id="sales" class="book__container">
+            <h2 class="sections__title sales__headline">Sales</h2>
+            <div id="sales" class="book__container active sales__link">
                 <p class="book__author"></p>
                 <p class="book__title"></p>
                 <p class="book__price"></p>
                 <p class="book__cover-type"></p>
             </div> 
         </section>
+
+        <button class="scroll__up-button scroll__up-button-hide">
+            <i class="fas fa-arrow-up"></i>
+        </button>
 
     </main>
     <script src="../javascript/app.js"></script>
