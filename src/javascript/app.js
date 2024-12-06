@@ -324,6 +324,9 @@ const salesCategory = document.getElementById(`sales`)
 
 const searchInput = document.querySelector(".search__input");
 
+const basketButton = document.querySelector(".basket__button"); 
+const basketCount = document.querySelector(".basket__count--placeholder")
+
 
 function bookContent (book, container){
     const bookElement = document.createElement(`div`);
@@ -490,10 +493,38 @@ searchInput.addEventListener('input', (e)=>{
         } else if (product.category === 'crime') {
             bookContent(product, crimeCotnainer); 
         }
-    }))
+    }));
+}); 
 
 
-})
+// BASKET COUNT AND LOCAL STORAGE 
+
+let basket = JSON.parse(localStorage.getItem("basket")) || []; 
+
+
+function basketCounterUpdate(){
+    if (basket.length > 0){
+        basketCount.style.display = "inline"; 
+        basketCount.textContent = basket.length; 
+    } else {
+        basketCount.style.display = "none";
+    };
+};
+
+function addToBasket(book){
+    basket.push(book); 
+    localStorage.setItem("basket", JSON.stringify(basket));
+    basketCounterUpdate();
+}; 
+
+document.querySelectorAll(".order__button").forEach((button,index) =>{
+    button.addEventListener("click", ()=>{
+        const book = products[index]; 
+        addToBasket(book); 
+    });
+}); 
+
+basketCounterUpdate();
 
 
 

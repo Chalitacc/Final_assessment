@@ -102,7 +102,7 @@ main{
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: var(--spacing-x-smal);
     justify-self:center;
-    margin: 0 auto;
+    margin: auto auto;
   
 }
 
