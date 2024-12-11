@@ -18,7 +18,7 @@ header{
 }
 
 .header__title {
-    font-size:3rem;
+    font-size:var(--font-large);
 }
 
 .header__first-container{
@@ -170,7 +170,7 @@ main{
     width: 80px;
     height: 30px;
     background-color: rgb(151, 56, 151);
-    color: var(--hover-text-color);
+    color:  var(--hover-text-color);
     border: none;
 }
 
@@ -205,3 +205,51 @@ main{
 }
 
 
+@media screen and (max-width: 400px) {
+    .header__first-container{
+        flex-direction: column;
+        text-align: center;
+        padding: var(--spacing-small);
+    }
+
+    .navbar__container{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .book__container{
+        grid-template-columns: 1fr;
+    }
+
+    .search__input{
+        width: 100%;
+    }
+
+    .scroll__up-button{
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media screen and (max-width:200px) {
+    header, .header__first-container{
+        padding: 5px;
+        font-size:0.8rem;
+    }
+
+    .book__container{
+        gap: 5px;
+        grid-template-columns: 1fr;
+    }
+
+    .search__input{
+        font-size: 0.6rem;
+        padding: 5px;
+    }
+
+    .basket__button, .order__button{
+        font-size: 0.6rem;
+        width: 50px;
+        height: 20px;
+    }
+}

@@ -1,0 +1,96 @@
+@font-face {
+    font-family: EBGaramond;
+    src: url(../assets/fonts/EBGaramond-VariableFont_wght.ttf);
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background: var(--seconday-color);
+}
+
+header{
+    width: 100%;
+    height: inherit;
+    background: var(--primary-color);
+    font-family: EBGaramond;
+    display: flex;
+    flex-direction: column;
+}
+
+.page__title{
+    align-self: center;
+    padding-top: var(--spacing-small);
+    font-size: var(--font-large);
+}
+
+.link__back{
+    text-decoration: none;
+    color: var(--text-color);
+    padding-left: var(--spacing-small);
+    padding-bottom: var(--spacing-small);
+    align-self: flex-start;
+}
+
+.link__back:hover{
+    color: var(--hover-text-color);
+}
+main{
+    height: 100%;
+}
+
+.contact__information-container{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-small);
+    margin: var(--spacing--medium) var(--spacing-small);
+    padding-left: var(--spacing-small);
+    padding-bottom: var(--spacing-small);
+    font-family: EBGaramond;
+    font-size: 1.2rem;
+    border: 1px black solid;
+
+}
+.contact__info-title{
+    font-weight: bold;
+}
+
+.contact__delivery-title{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.payment__method-container{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-small);
+    margin: var(--spacing--medium) var(--spacing-small);
+    padding-left: var(--spacing-small);
+    font-family: EBGaramond;
+    font-size: 1.2rem;
+    border: 1px black solid;
+
+}
+
+.payment__method-title{
+    font-weight: bold;
+
+}
+
+
+.submit__button{
+    align-self: center;
+    width: 100px;
+    height: 40px;
+    margin-bottom: var(--spacing-x-smal);
+    cursor: pointer;
+    background-color: rgb(151, 56, 151);
+    color: black;
+    border: none;
+    border-radius: 10%;
+    font-weight: bold;
+}
+
+.submit__button:hover{
+    color: var(--hover-text-color);
+}
+

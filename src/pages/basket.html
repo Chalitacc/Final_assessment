@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Corner</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/basket.css">
+</head>
+<body>
+    <header>
+        <h1 class="page__title">Cozy Corner</h1>
+        <a href="../pages/shop.html" class="link__back">Back to Shop</a>
+    </header>
+
+
+    <main>
+        <h2 class="cart__title">Your Cart:</h2>
+
+
+        <div class="basket__item-container"></div>
+
+        
+        <template id="basket__item-template">
+            <div class="basket__items">
+                <div class="image__container">
+                    <img src="" alt="product image" class="product__image">
+                </div>
+                <div class="product__description">
+                    <p class="product__author">Author</p>
+                    <p class="product__title">Title of Book</p>
+                    <p class="product__cover-type">Cover Type</p>
+                    <p class="product__price">169,-</p>
+    
+                    <div class="item__button">
+                        <button class="button__decrease">-</button>
+                        <p class="item__count">1</p>
+                        <button class="button__increase">+</button>
+                    </div>
+                </div>  
+            </div>
+
+        </template>
+      
+        <div class="total__basket-price-container">
+            <p class="shipping">Shipping Price: <span class="price shipping__price">79,-</span>
+            </p>
+            <p class="total">Total: <span class="price total__price">149,-</span></p>
+
+            <a href="../pages/order.html" class="order__link">
+                <button class="order__button">Order</button>
+            </a>
+         
+        </div>
+
+
+        
+
+    </main>
+    <script src="../javascript/basket.js"></script>
+</body>
+</html>

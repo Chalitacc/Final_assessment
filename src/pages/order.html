@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Corner</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/order.css">
+</head>
+<body>
+    <header>
+        <h1 class="page__title">Cozy Corner</h1>
+        <a href="../pages/shop.html" class="link__back">Back to Shop</a>
+    </header>
+
+
+    <main>
+        <form class="form__section">
+            <fieldset class="contact__information-container">
+                <legend for="contact__info-containere" class="contact__info-title">Contact Information</legend>
+
+                <div class="firstname">
+                    <label for="firstname">First name:</label>
+                    <input type="text" id="firstname" name="firstname" required placeholder="e.g. John">
+                </div>
+                
+                <div class="lastname">
+                    <label for="lastname">Last name:</label>
+                    <input type="text" id="lastname" name="lastname" required placeholder="e.g., Smith">
+                </div>
+
+
+                <div class="email">
+                    <label for="email">E-Mail:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="phone__number">
+                    <label for="phonenumber">Phone Number</label>
+                    <input type="tel" required id="phonenumber" name="phonenumber" required>
+                </div>
+
+                <div class="adress">
+                    <label for="adress">Adress:</label>
+                    <input type="text" name="adress" id="adress" required>
+                </div>
+
+                <div class="post__number">
+                    <label for="postNumber">Post Number:</label>
+                    <input type="text" required id="postnumber" name="postnumber">
+                </div>
+
+                <div class="post__adress">
+                    <label for="postadress">Post Adress:</label>
+                    <input type="text" id="postadress" name="post adress" required>
+                </div>
+
+                <div class="contact__info-delivery-method">
+                    <label class="contact__delivery-title" for="delivery">Choose Delivery Method:</label>
+               
+                    <div>
+                     <label for="post">Post</label>
+                     <input type="radio" id="post" name="delivery">
+                    </div>
+
+                    <div>
+                        <label for="home delivery">Home Delivery</label>
+                        <input type="radio" id="home-delivery" name="delivery">
+                    </div>
+
+                    <div>
+                        <label for="pick up">Pick up at closest store</label>
+                        <input type="radio" id="pick-up" name="delivery">
+                    </div>
+
+                    <div>
+                        <label for="express home delivery">Express home delivery</label>
+                        <input type="radio" id="express-delivert" name="delivery">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="payment__method-container">
+                <legend class="payment__method-title">Payment Method</legend>
+                  
+               <label class="contact__info-group" for="payment">Choose Payment Method:</label>
+               
+               <div class="contact__info-select">
+                    <select name="payment" id="payment">
+                        <option value="credit-card">Choose here</option>
+                        <option value="credit-card">Credit Card</option>
+                        <option value="vipps">Vipps</option>
+                        <option value="paypal">PayPal</option>
+                    </select>
+                </div>
+
+
+                <button class="submit__button">Confirm Order</button>
+            </fieldset>
+    
+    
+        </form>
+    </main>
+    <script src="../javascript/order.js"></script>
+</body>
+</html>

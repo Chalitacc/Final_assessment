@@ -31,6 +31,7 @@ main{
 }
 
 .text__content{
+   text-align: center;
     color: var(--text-color);
     font-family: EBGaramond;
 }
@@ -57,4 +58,19 @@ main{
 .intro__button:hover{
     background-color: rgb(151, 56, 151);
     border: none;
+}
+
+@media screen and (max-width:775px){
+    .intro__container{
+        width: 80%;
+        height: 80%;
+    }
+    
+}
+
+
+@media screen and (max-height:283px){
+    .intro__title{
+        font-size: var(--font-large);
+    }
 }

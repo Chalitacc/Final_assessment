@@ -357,6 +357,13 @@ function bookContent (book, container){
     orderButton.textContent = `Select Book`;
     orderButton.classList.add(`order__button`)
 
+    orderButton.addEventListener("click", function(){
+        console.log("book added;", book.title);
+        
+        addToBasket(book);
+    })
+    
+
     bookElement.appendChild(imgElement);
     bookElement.appendChild(authorElement);
     bookElement.appendChild(titleElement);
@@ -377,6 +384,7 @@ products.filter(book => book.category === `crime`).forEach (book => bookContent(
 // FILTER FUNCTION FOR SCROLL TO VIEW AND SALES CATEGORY 
 
 function hideContainers() {
+
     document.querySelectorAll(".book__container").forEach(container =>{
         container.style.display = 'none';
     });
@@ -488,7 +496,7 @@ searchInput.addEventListener('input', (e)=>{
             bookContent(product, novelsContainer);
         } else if (product.category === "fantasy") {
             bookContent(product, fantasyContainer);
-        } else if (product.category === thriller) {
+        } else if (product.category === "thriller") {
             bookContent(product, thrillerContainer); 
         } else if (product.category === 'crime') {
             bookContent(product, crimeCotnainer); 
@@ -500,31 +508,65 @@ searchInput.addEventListener('input', (e)=>{
 // BASKET COUNT AND LOCAL STORAGE 
 
 let basket = JSON.parse(localStorage.getItem("basket")) || []; 
+ basketCounterUpdate();  
 
 
 function basketCounterUpdate(){
+    const totalItem = basket.reduce ((sum, item)=> sum + item.quantity, 0)
     if (basket.length > 0){
         basketCount.style.display = "inline"; 
-        basketCount.textContent = basket.length; 
+        basketCount.textContent = totalItem;
+             //basket.length; 
+        
     } else {
         basketCount.style.display = "none";
     };
+
+    console.log(`Basket Count: ${totalItem}`);
+
+   
+
 };
 
-function addToBasket(book){
-    basket.push(book); 
-    localStorage.setItem("basket", JSON.stringify(basket));
+
+
+
+
+function addToBasket (book){
+    const bookId = book.title + '-' + book.author + '-' + book.price; 
+    const existingBook = basket.find((item)  => item.id === bookId); 
+    
+
+    if (existingBook){
+        existingBook.quantity += 1; 
+    } else {
+        basket.push({...book, id: bookId, quantity: 1})
+    }
+
+    localStorage.setItem('basket', JSON.stringify(basket))
+
     basketCounterUpdate();
-}; 
+}
 
-document.querySelectorAll(".order__button").forEach((button,index) =>{
-    button.addEventListener("click", ()=>{
-        const book = products[index]; 
-        addToBasket(book); 
-    });
-}); 
 
-basketCounterUpdate();
+
+
+
+
+// function addToBasket(book){
+//     basket.push(book); 
+//     localStorage.setItem("basket", JSON.stringify(basket));
+//     basketCounterUpdate();
+// }; 
+
+// document.querySelectorAll(".order__button").forEach((button,index) =>{
+//     button.addEventListener("click", ()=>{
+//         const book = products[index]; 
+//         addToBasket(book); 
+//     });
+// }); 
+
+// basketCounterUpdate();
 
 
 
