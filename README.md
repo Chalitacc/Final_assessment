@@ -20,4 +20,4 @@ https://www.youtube.com/watch?v=yS9OZyyY4TE&ab_channel=WebZone
 ## Links
 Here is the link to my git https://github.com/Chalitacc/Final_assessment/tree/main
 
-Here is the link for my netflify: https://chalita-individual4.netlify.app/
+Here is the link for my netflify: https://chalita-final-assessment.netlify.app/
