@@ -89,18 +89,4 @@ renderBasketItems();
 
 
 
-// function increaseQuantity (index){
-//     basket [index].quantity += 1; 
-//     localStorage.setItem("basket", JSON.stringify(basket)); 
-//     renderBasketItems()
-// }
 
-// function decreaseQuantity (index){
-//     basket[index].quantity -= 1; 
-//     if (basket[index].quantity <= 0){
-//         basket.splice(index,1); 
-//     }   
-//     localStorage.setItem("basket", JSON.stringify(basket));
-// }
-
-// renderBasketItems();

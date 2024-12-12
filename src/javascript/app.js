@@ -553,20 +553,6 @@ function addToBasket (book){
 
 
 
-// function addToBasket(book){
-//     basket.push(book); 
-//     localStorage.setItem("basket", JSON.stringify(basket));
-//     basketCounterUpdate();
-// }; 
-
-// document.querySelectorAll(".order__button").forEach((button,index) =>{
-//     button.addEventListener("click", ()=>{
-//         const book = products[index]; 
-//         addToBasket(book); 
-//     });
-// }); 
-
-// basketCounterUpdate();
 
 
 
