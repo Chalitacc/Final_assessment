@@ -18,6 +18,8 @@ https://www.youtube.com/watch?v=yS9OZyyY4TE&ab_channel=WebZone
 
 
 ## Links
+
+Figma link: https://www.figma.com/design/YUC6HlbReCWj2KFFYJ3cJi/Cozy-Corner?node-id=1-3&t=GYt9KgZQJDeV3HwL-1 
 Here is the link to my git https://github.com/Chalitacc/Final_assessment/tree/main
 
 Here is the link for my netflify: https://chalita-final-assessment.netlify.app/
